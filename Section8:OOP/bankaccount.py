@@ -21,9 +21,10 @@ class Account:
 
     
     def __str__(self):
-        print(f'Welcome {owner}, you have a balance of Ksh{balance} in your account')
+        return f"{self.owner} \n {self.balance}"
 
 accountone = Account('Ashley', 5000)
+print(accountone)
 print(accountone.owner)
 print(accountone.balance)
 accountone.deposit(50)
